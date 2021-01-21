@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+
+<!DOCTYPE games [
+        <!ELEMENT games (game)*>
+        <!ELEMENT game (game_name|release_date|author|game_engine|price)*>
+        <!ATTLIST game
+                id CDATA #REQUIRED>
+        <!ELEMENT game_name (#PCDATA)>
+        <!ELEMENT release_date (#PCDATA)>
+        <!ELEMENT author (#PCDATA)>
+        <!ELEMENT game_engine (#PCDATA)>
+        <!ELEMENT price (#PCDATA)>
+        ]>
+<games>
+    <game id="1">
+        <game_name>Borderlands</game_name>
+        <release_date>20.10.2009</release_date>
+        <author>Gearbox Software</author>
+        <game_engine>Unreal Engine 3</game_engine>
+        <price>45</price>
+    </game>
+    <game id="2">
+        <game_name>Borderlands 2</game_name>
+        <release_date>18.09.2012</release_date>
+        <author>Gearbox Software</author>
+        <game_engine>Unreal Engine 3</game_engine>
+        <price>50</price>
+    </game>
+    <game id="3">
+        <game_name>League of legends</game_name>
+        <release_date>16.10.2009</release_date>
+        <author>Tencent</author>
+        <game_engine>Doom engine</game_engine>
+        <price>17</price>
+    </game>
+    <game id="4">
+        <game_name>Warface</game_name>
+        <release_date>19.05.2010</release_date>
+        <author>Gearbox Software</author>
+        <game_engine>Godot</game_engine>
+        <price>25</price>
+    </game>
+</games>
